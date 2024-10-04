@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dado Virtual</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Promedio de Actividades</title>
 </head>
 <body>
-    <div id="contenedor-dado">
-        <h1>Dado Virtual</h1>
-        <input type="number" id="caras" placeholder="Número de caras" min="1" required>
-        <button onclick="lanzarDado()">Lanzar Dado</button>
-        <div id="resultado"></div>
+    <div class="container">
+        <h1>Calculadora de Promedio</h1>
+        <form id="gradeForm">
+            <label for="activity1">Actividad 1:</label>
+            <input type="number" id="activity1" required>
+            <label for="activity2">Actividad 2:</label>
+            <input type="number" id="activity2" required>
+            <label for="activity3">Actividad 3:</label>
+            <input type="number" id="activity3" required>
+            <button type="submit">Calcular Promedio</button>
+        </form>
+        <div id="result"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
+
